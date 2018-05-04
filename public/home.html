@@ -1,69 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="/css/main.css">
-  
-  <title>Generic Hipster Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    <title>Generic Hipster Coffee</title>
 </head>
+
 <body>
-    <!-- Page Container -->
-    <div class="container">
-
-
     <!-- Nav Container (logo and navbar) -->
+    <div class="container">
     <div class="header">
 
         <!-- Logo -->
         <div class="logo">
-        <img src="image/logo.svg" alt="Generic Hipster Coffee Logo">
+            <img src="image/logo.svg" alt="Generic Hipster Coffee Logo">
+        </div>
+    
+
+        <!-- Nav -->
+        <div class="navbar">
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="ourstory.html">Our Story</a>
+            </nav>
+        </div>
+</div>
+  
+    <!-- Page Container -->
+   
+
+        <!-- Body Container -->
+        <div class="body">
+
+            <h1>Generic Hipster Coffee</h1>
+
+
+            <h2>SPECIALITY COFFEE, FRESH FOOD & LOCAL COMMUNITY.</h2>
+
+
+            <div class="counter">
+            </div>
+
+            <div class="hour">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>OPENING HOURS</h3>
+                        <p>sunday to thursday: 8 am to 11 pm</p>
+                        <p>friday to saturday: 8 am to 1 am </p>
+                    </div>
+                    <div class="col-sm">
+                        <h3>BOOK A TABLE</h3>
+                        <p>Call +1 415-321-4567</p>
+                    </div>
+                    <div class="col-sm">
+                        <h3>ADDRESS</h3>
+                        <p>321 Ivy St.San Francisco, CA 94102</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <nav class="nav">
-            <a href="nav-link">Home</a>
-            <a href="nav-link">Menu</a>
-            <a href="nav-link">Coffee</a>
-            <a href="nav-link">Our Story</a>
-        </nav>
+        <!-- Google map -->
+        <div id="map-container" class="map-container
+    z-depth-1-half" style="height: 300px; justify-content: center;">
+        </div>
 
     </div>
 
-    <!-- Body Container -->
-    <div class="body">
+        <!-- Footer Container -->
+        <div class="container">
+        <div class="footer">
 
-   <h1>Generic Hipster Coffee</h1>  
+            <nav class="navbarb">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="ourstory.html">Our Story</a>
+            </nav>
 
-   <h2>Specialty coffee, fresh food & local community.</h2> 
-
-    
-    Opening hours 
-    sunday to  thursday: 8 am to 11 pm
-    friday to  saturday: 8 am to 1 am 
-
-    Book a table 
-    Call +1 415-321-4567 
-
-    Address 
-    321 Ivy St.San Francisco, CA 94102 
+            <h4>#HIPSTERSMAKECOFFEE</h4>
+            <h5>Follow us on
+                <a href="#" alt="#HIPSTERMAKECOFFEE">Twitter</a> and
+                <a href="#">Instagram</a>
+            </h5>
+        </div>
     </div>
 
-    <!-- Footer Container -->
-    <div class="footer">
+    <!-- google map script-->
 
-        <nav class="nav">
-            <a href="nav-link">Home</a>
-            <a href="nav-link">Menu</a>
-            <a href="nav-link">Coffee</a>
-            <a href="nav-link">Our Story</a>
-        </nav>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 
-        <h4>#HIPSTERMAKECOFFEE</h4>
-        <p>Follow us on Twitter and Instagram</p>
-    </div>
+    <!-- Google Maps settings -->
+    <script>
+        // Regular map
+        function regular_map() {
+            var var_location = new google.maps.LatLng(50.078471, 14.427828);
 
-    </div>
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Generic Hipster Coffee"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
+    </script>
+
+
 </body>
+
 </html>

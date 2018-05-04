@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+// Container
+.container {
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width: 900px) {
+    .container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+// Header 
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    color: gray;
+    font-size: 14px;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.navbar > nav a {
+    color: #B7B7B8;
+    padding: 0.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    .logo { 
+        margin-left: 5rem; 
+    }
+    .navbar {
+        margin-right: 5rem;
+    }
+    }
+}
+
+// Home Page
+
+.body {
+    margin: 0;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.counter {
+    width: 100%;
+    height: 200px;
+    background-image: url(/image/counter.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .counter {
+        width: 100%;
+        height: 613px;
+    }
+ }
+
+.hour {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1  {
+    font-size: 36px;
+    margin-top: 1rem;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+}
+
+// Menu Page
+
+.menu_block {
+    width: 300px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    border-spacing: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu_heading {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.menu_body {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.menu_body_item {
+    margin-left: 1rem;
+    font-size: 10px;
+}
+
+.menu_body_price {
+    margin-right: 1rem;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+    .menucontainer {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 8rem;
+        margin-left: 8rem;
+        padding: 2rem;
+    }
+    .menu_block {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+
+
+
+// Coffee Page
+
+@media only screen and (min-width: 900px) {
+    .coffeecard {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .card {
+        display: flex;
+        flex-flow: column wrap;
+    }
+ }
+
+// Our Story Page
+.counterourstory {
+    width: 100%;
+    height: 200px;
+    background-image: url(/image/counter.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .counterourstory {
+        width: 100%;
+        height: 550px;
+        margin-bottom: 1rem;
+    }
+ }
+
+// Footer
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color:#32373D;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.navbarb {
+    display: flex;
+    flex-direction: row;
+    color: #32373D;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.footer > nav a {
+    padding: 1rem;
+}
+
+h4  {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4rem;
+}
+
+h5 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+
+
+
+
